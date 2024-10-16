@@ -1,4 +1,4 @@
-def dec_bin(dec): "Преобразование  десятичного числа в двоичную систему счисления"
+def dec_bin(dec): #Преобразование  десятичного числа в двоичную систему счисления
  if dec == 0:
   return "0"
  elif dec > 0:
@@ -6,7 +6,7 @@ def dec_bin(dec): "Преобразование  десятичного числ
  else:
   return "-" + dec_bin(-dec)
 
-def dec_oct(dec): "Преобразование  десятичного числа в восьмеричную систему счисления"
+def dec_oct(dec): #Преобразование  десятичного числа в восьмеричную систему счисления
  if dec == 0:
   return "0"
  elif dec > 0:
@@ -14,7 +14,7 @@ def dec_oct(dec): "Преобразование  десятичного числ
  else:
   return "-" + dec_oct(-dec)
 
-def dec_input(): "Ввод числа пользователем"
+def dec_input(): #Ввод числа пользователем
  try:
   dec_number = float(input("Введите десятичное число: "))
   if dec_number != int(dec_number):
